@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/ersindevrim/leetcode/arrays"
+	arrays "github.com/ersindevrim/leetcode/arrays/code"
 )
 
 func main() {
