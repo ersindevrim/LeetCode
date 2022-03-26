@@ -14,5 +14,4 @@ func TestDuplicateZeros(t *testing.T) {
 
 		assert.Equal(t, got, want)
 	})
-
 }
