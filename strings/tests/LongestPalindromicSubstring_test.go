@@ -3,39 +3,35 @@ package strings
 import (
 	"testing"
 
+	"github.com/ersindevrim/leetcode/global"
 	strings "github.com/ersindevrim/leetcode/strings/code"
 	"github.com/stretchr/testify/assert"
 )
 
-type question struct {
-	got      string
-	intParam int
-	want     string
-}
-
 func TestMoveZeroes(t *testing.T) {
 	t.Run("This should success ", func(t *testing.T) {
-		qs := []question{
+
+		qs := []global.Question{
 			{
-				got:  "babad",
-				want: "bab",
+				Got:  "babad",
+				Want: "bab",
 			},
 			{
-				got:  "cbbd",
-				want: "bb",
+				Got:  "cbbd",
+				Want: "bb",
 			},
 			{
-				got:  "abbcccddcccbba",
-				want: "abbcccddcccbba",
+				Got:  "abbcccddcccbba",
+				Want: "abbcccddcccbba",
 			},
 			{
-				got:  "a",
-				want: "a",
+				Got:  "a",
+				Want: "a",
 			},
 		}
 
 		for _, v := range qs {
-			assert.Equal(t, strings.LongestPalindrome(v.got), v.want)
+			assert.Equal(t, strings.LongestPalindrome(v.Got), v.Want)
 		}
 	})
 }
