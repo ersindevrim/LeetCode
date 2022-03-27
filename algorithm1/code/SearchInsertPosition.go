@@ -1,5 +1,6 @@
 package algorithm1
 
+// SearchInsert ...
 func SearchInsert(nums []int, target int) int {
 	insertPos := 0
 	lenOfNumbers := len(nums)

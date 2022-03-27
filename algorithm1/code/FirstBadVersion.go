@@ -1,5 +1,6 @@
 package algorithm1
 
+// FirstBadVersion ...
 func FirstBadVersion(n int) int {
 	start := 0
 	stop := n
