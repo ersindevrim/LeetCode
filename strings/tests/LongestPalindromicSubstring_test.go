@@ -8,8 +8,9 @@ import (
 )
 
 type question struct {
-	got  string
-	want string
+	got      string
+	intParam int
+	want     string
 }
 
 func TestMoveZeroes(t *testing.T) {
