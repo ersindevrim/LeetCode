@@ -6,3 +6,8 @@ type Question struct {
 	IntParam int
 	Want     string
 }
+
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}

@@ -1,11 +1,8 @@
 package arrays
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+import "github.com/ersindevrim/leetcode/global"
 
-func AddTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+func AddTwoNumbers(l1 *global.ListNode, l2 *global.ListNode) *global.ListNode {
 
 	move, head := 0, l1
 	for {
@@ -26,7 +23,7 @@ func AddTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 
 	for move != 0 {
 		if l1.Next == nil {
-			l1.Next = &ListNode{0, nil}
+			l1.Next = &global.ListNode{0, nil}
 		}
 		l1.Next.Val += move
 

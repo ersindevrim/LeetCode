@@ -1,9 +1,9 @@
-package arrays
+package algorithm1
 
 import (
 	"testing"
 
-	arrays "github.com/ersindevrim/leetcode/arrays/code"
+	algorithm1 "github.com/ersindevrim/leetcode/algorithm1/code"
 	"github.com/ersindevrim/leetcode/global"
 	"github.com/stretchr/testify/assert"
 )
@@ -11,39 +11,37 @@ import (
 func TestAddTwoNumbers(t *testing.T) {
 	t.Run("This should return correct value", func(t *testing.T) {
 		postData1 := global.ListNode{
-			Val: 2,
+			Val: 1,
 			Next: &global.ListNode{
-				Val: 4,
+				Val: 2,
 				Next: &global.ListNode{
-					Val:  3,
-					Next: nil,
-				},
-			},
-		}
-
-		postData2 := global.ListNode{
-			Val: 5,
-			Next: &global.ListNode{
-				Val: 6,
-				Next: &global.ListNode{
-					Val:  4,
-					Next: nil,
+					Val: 3,
+					Next: &global.ListNode{
+						Val: 3,
+						Next: &global.ListNode{
+							Val: 4,
+							Next: &global.ListNode{
+								Val:  5,
+								Next: nil,
+							},
+						},
+					},
 				},
 			},
 		}
 
 		result := global.ListNode{
-			Val: 7,
+			Val: 3,
 			Next: &global.ListNode{
-				Val: 0,
+				Val: 4,
 				Next: &global.ListNode{
-					Val:  8,
+					Val:  5,
 					Next: nil,
 				},
 			},
 		}
 
-		got := arrays.AddTwoNumbers(&postData1, &postData2)
+		got := algorithm1.MiddleNode(&postData1)
 		want := &result
 
 		assert.Equal(t, got, want)
