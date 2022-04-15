@@ -7,30 +7,30 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-type Mock struct {
+type PalindromeCheck struct {
 	Got  int
-	Want int
+	Want bool
 }
 
-func TestReverse(t *testing.T) {
+func TestIsPalindrome(t *testing.T) {
 	t.Run("This should success ", func(t *testing.T) {
-		qs := []Mock{
+		qs := []PalindromeCheck{
 			{
 				Got:  123,
-				Want: 321,
+				Want: false,
 			},
 			{
-				Got:  -125790,
-				Want: -97521,
+				Got:  12321,
+				Want: true,
 			},
 			{
-				Got:  1234567899,
-				Want: 0,
+				Got:  -121,
+				Want: false,
 			},
 		}
 
 		for _, v := range qs {
-			assert.Equal(t, v.Want, problems.Reverse(v.Got))
+			assert.Equal(t, v.Want, problems.IsPalindrome(v.Got))
 		}
 	})
 }
