@@ -11,7 +11,7 @@ var RomanIntMap = map[string]int{
 	"M": 1000,
 }
 
-/* IntToRoman ...
+/* RomanToInt ...
 Symbol       Value
 I             1
 V             5
