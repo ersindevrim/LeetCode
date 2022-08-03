@@ -1,5 +1,6 @@
 package arrays
 
+// FindMedianSortedArrays ...
 func FindMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 
 	if len(nums1) > len(nums2) {

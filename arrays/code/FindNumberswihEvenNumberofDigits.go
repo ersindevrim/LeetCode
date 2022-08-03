@@ -1,5 +1,6 @@
 package arrays
 
+// FindNumbers ...
 func FindNumbers(nums []int) int {
 
 	isEven := 0

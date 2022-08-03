@@ -2,7 +2,7 @@ package algorithm1
 
 import "github.com/ersindevrim/leetcode/global"
 
-/**
+/* RemoveNthFromEnd ...
  * Definition for singly-linked list.
  * type ListNode struct {
  *     Val int

@@ -2,6 +2,7 @@ package arrays
 
 import "github.com/ersindevrim/leetcode/global"
 
+// AddTwoNumbers ...
 func AddTwoNumbers(l1 *global.ListNode, l2 *global.ListNode) *global.ListNode {
 
 	move, head := 0, l1

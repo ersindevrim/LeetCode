@@ -2,6 +2,7 @@ package algorithm1
 
 import "github.com/ersindevrim/leetcode/global"
 
+// MaxAreaOfIsland ...
 func MaxAreaOfIsland(grid [][]int) int {
 	maxArea := 0
 	for row, line := range grid {

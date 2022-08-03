@@ -1,5 +1,6 @@
 package arrays
 
+// LengthOfLongestSubstring ...
 func LengthOfLongestSubstring(s string) int {
 	var i, maximum_len int = 0, 0
 	mymap := make(map[byte]int)

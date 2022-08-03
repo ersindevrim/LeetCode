@@ -7,6 +7,7 @@ var dir = [][]int{
 	{0, -1},
 }
 
+// FloodFill ...
 func FloodFill(image [][]int, sr int, sc int, newColor int) [][]int {
 	color := image[sr][sc]
 	if newColor == color {

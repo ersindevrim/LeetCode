@@ -10,7 +10,7 @@ import "github.com/ersindevrim/leetcode/global"
  * }
  */
 
-// MiddleNode...
+// MiddleNode ...
 func MiddleNode(head *global.ListNode) *global.ListNode {
 	linkCount := 0
 	positionCount := 0

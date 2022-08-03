@@ -1,5 +1,6 @@
 package arrays
 
+// MaxArea ...
 func MaxArea(height []int) int {
 	max, start, end := 0, 0, len(height)-1
 	for start < end {

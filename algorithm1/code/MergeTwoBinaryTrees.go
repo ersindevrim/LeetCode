@@ -2,6 +2,7 @@ package algorithm1
 
 import "github.com/ersindevrim/leetcode/global"
 
+// MergeTrees ...
 func MergeTrees(root1 *global.TreeNode, root2 *global.TreeNode) *global.TreeNode {
 
 	if root1 == nil {
