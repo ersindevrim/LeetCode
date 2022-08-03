@@ -1,5 +1,6 @@
 package problems
 
+// IsPalindrome ...
 func IsPalindrome(x int) bool {
 	answer := 0
 	shouldRun := x

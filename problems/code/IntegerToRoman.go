@@ -13,7 +13,7 @@ D             500
 M             1000
 */
 func IntToRoman(num int) string {
-	var roman string = ""
+	var roman string
 	var numbers = []int{1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000}
 	var romans = []string{"I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M"}
 	var index = len(romans) - 1
@@ -23,7 +23,7 @@ func IntToRoman(num int) string {
 			roman += romans[index]
 			num -= numbers[index]
 		}
-		index -= 1
+		index--
 	}
 
 	return roman

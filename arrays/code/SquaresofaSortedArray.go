@@ -2,6 +2,7 @@ package arrays
 
 import "sort"
 
+// SortedSquares ...
 func SortedSquares(nums []int) []int {
 	var returnArray = make([]int, len(nums))
 

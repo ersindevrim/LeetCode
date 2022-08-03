@@ -1,6 +1,6 @@
 package problems
 
-//RomanIntMap
+// RomanIntMap ...
 var RomanIntMap = map[string]int{
 	"I": 1,
 	"V": 5,
@@ -11,9 +11,7 @@ var RomanIntMap = map[string]int{
 	"M": 1000,
 }
 
-/*
-IntToRoman ...
-
+/* IntToRoman ...
 Symbol       Value
 I             1
 V             5

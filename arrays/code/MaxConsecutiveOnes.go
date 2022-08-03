@@ -1,5 +1,6 @@
 package arrays
 
+// FindMaxConsecutiveOnes ...
 func FindMaxConsecutiveOnes(nums []int) int {
 
 	consecutive := 0

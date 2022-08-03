@@ -2,7 +2,7 @@ package arrays
 
 // LengthOfLongestSubstring ...
 func LengthOfLongestSubstring(s string) int {
-	var i, maximum_len int = 0, 0
+	var i, maximumLen int = 0, 0
 	mymap := make(map[byte]int)
 
 	for j := 0; j < len(s); j++ {
@@ -12,10 +12,10 @@ func LengthOfLongestSubstring(s string) int {
 			i++
 		}
 
-		if maximum_len < j-i+1 {
-			maximum_len = j - i + 1
+		if maximumLen < j-i+1 {
+			maximumLen = j - i + 1
 		}
 	}
 
-	return maximum_len
+	return maximumLen
 }

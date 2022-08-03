@@ -1,5 +1,6 @@
 package arrays
 
+// DuplicateZeros ...
 func DuplicateZeros(arr []int) []int {
 
 	returnArray := make([]int, len(arr))
