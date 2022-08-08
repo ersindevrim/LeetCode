@@ -27,13 +27,7 @@ func IsInGrid(grid [][]int, x, y int) bool {
 	return x < 0 || x >= len(grid) || y < 0 || y >= len(grid[0]) || grid[x][y] == 0
 }
 
-/** InsertToLinkedList ...
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
+// InsertToLinkedList ...
 func InsertToLinkedList(val int, linked *ListNode) *ListNode {
 	newNode := ListNode{
 		Val:  val,

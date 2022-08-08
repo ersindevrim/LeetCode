@@ -6,7 +6,8 @@ import (
 	"github.com/ersindevrim/leetcode/global"
 )
 
-/** MergeKLists ...
+// MergeKLists ...
+/*
  * Definition for singly-linked list.
  * type ListNode struct {
  *     Val int

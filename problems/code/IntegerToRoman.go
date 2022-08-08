@@ -1,17 +1,16 @@
 package problems
 
+// IntToRoman ...
 /*
-IntToRoman ...
-
-Symbol       Value
-I             1
-V             5
-X             10
-L             50
-C             100
-D             500
-M             1000
-*/
+ * Symbol       Value
+ * I             1
+ * V             5
+ * X             10
+ * L             50
+ * C             100
+ * D             500
+ * M             1000
+ */
 func IntToRoman(num int) string {
 	var roman string
 	var numbers = []int{1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000}
