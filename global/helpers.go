@@ -26,3 +26,29 @@ type TreeNode struct {
 func IsInGrid(grid [][]int, x, y int) bool {
 	return x < 0 || x >= len(grid) || y < 0 || y >= len(grid[0]) || grid[x][y] == 0
 }
+
+/** InsertToLinkedList ...
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+func InsertToLinkedList(val int, linked *ListNode) *ListNode {
+	newNode := ListNode{
+		Val:  val,
+		Next: nil,
+	}
+
+	if linked == nil {
+		linked = &newNode
+		return linked
+	}
+
+	returnVal := linked
+	for returnVal.Next != nil {
+		returnVal = returnVal.Next
+	}
+	returnVal.Next = &newNode
+	return linked
+}
