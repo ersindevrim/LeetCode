@@ -12,7 +12,7 @@ func TopKFrequent(nums []int, k int) []int {
 
 	freq := make(map[int]int)
 	for _, num := range nums {
-		freq[num] += 1
+		freq[num]++
 	}
 
 	var slice []mySlice
